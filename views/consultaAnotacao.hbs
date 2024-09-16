@@ -1,0 +1,25 @@
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Pagina Principal</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Consulta de Anotação</li>
+  </ol>
+</nav>
+
+
+<div class="container mt-5">
+        <h2 class="text-center" style="color: var(--azul);">Consulta a Informações da Anotação</h2>
+        <hr class="mb-4">
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"><b>Título:</b> {{anotacao.titulo}}</h4>
+                <h6 class="card-subtitle mb-2 text-muted"><b>Id:</b> {{anotacao._id}}</h6>
+                <p class="card-text"><b>Tag:</b> {{anotacao.tag}} | <b>Data de Criação:</b> {{data}}</p>
+                <p class="card-text">{{anotacao.descricao}}</p>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="/" class="btn btn-primary mt-3"><i class="bi bi-arrow-left"></i>Tela Principal</a>
+        </div>
+    </div>

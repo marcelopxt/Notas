@@ -1,0 +1,41 @@
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Pagina Principal</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Criação de Anotação</li>
+  </ol>
+</nav>
+
+
+
+
+<h1 class="text-center" style="color: var(--azul);">Criar Nova Anotação</h1>
+
+<form action="/anotacao/cria" method="POST">
+<div class="row">
+    <div class="form-group col-md-8">
+        <label for="titulo" class="form-label">Título:</label>
+        <input type="text" class="form-control" id="titulo" name="titulo" value="{{anotacao.titulo}}">
+    </div>
+
+    <div class="form-group col-md-4">
+        <label for="tag" class="form-label">Tag da Anotação</label>
+      <select class="form-select" id="tag" name="tag" required>
+        <option value="" disabled selected hidden>Selecione a Tag</option>
+        <option value="Pessoal">Pessoal</option>
+        <option value="Trabalho">Trabalho</option>
+        <option value="Curso">Curso</option>
+        <option value="Lazer">Lazer</option>
+      </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="form-groupc col-md-12">
+        <label for="anotacao" class="form-label">Anotação:</label>
+        <textarea id="descricao" name="descricao" class="form-control" rows="5"></textarea>
+    </div>
+</div>
+
+    <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+    <a href="/"class="btn btn-secondary mt-3">Cancelar</a>
+</form>

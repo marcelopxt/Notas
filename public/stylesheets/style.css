@@ -1,0 +1,173 @@
+:root {
+  --azul: #314A59;
+  --laranjaClaro: #F2BE5C;
+  --laranjaEscuro: #F2A74B;
+  --vermelho: #F26457;
+  --branco: #F2F2F2;
+}
+
+body {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: var(--laranjaEscuro);
+  margin-bottom: 20px;
+}
+
+a span {
+  color: var(--branco);
+}
+
+#navbarNav a {
+  text-decoration: none;
+  color: var(--azul);
+  font-size: large;
+}
+
+#navbarNav a:hover {
+  color: var(--branco);
+}
+
+h1 {
+  color: var(--azul);
+}
+
+#filterTag {
+  color: var(--azul);
+}
+
+header {
+  background-color: var(--azul);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: var(--branco);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--laranjaEscuro);
+}
+
+header nav {
+  margin-left: 20px;
+}
+
+header nav a {
+  margin: 0 15px;
+  color: var(--branco);
+  text-decoration: none;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+#cabecalho {
+  font-weight: bold;
+  color: var(--azul);
+  background-color: var(--branco);
+  font-size: medium;
+}
+
+#tag-icon {
+  color: var(--vermelho);
+}
+
+.linha{
+  border: 1px solid rgb(200, 199, 199);
+  border-radius: 5px;
+  padding: 10px 5px;
+  font-size:medium;
+}
+
+.no-notes {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}
+
+.tag {
+  color: var(--vermelho);
+  font-weight: bold;
+}
+
+.tag i {
+  color: var(--vermelho);
+  margin-right: 5px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+.btn-back {
+  margin-top: 20px;
+}
+
+#tag-icon {
+  color: var(--vermelho);
+  text-decoration: none;
+}
+
+#container-sobre{
+  background-color: var(--branco);
+  padding: 10px 10px;
+  margin-top: 80px;
+  border-radius: 5px;
+}
+
+#lapisAlterar{
+  color: var(--laranjaEscuro);
+}
+#olhoConsulta{
+  color: var(--azul);
+}
+#lixoDeletar{
+  color: var(--vermelho);
+}
+
+.erro{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.erro h2 {
+  color: var(--vermelho);
+}
+
+.erro p {
+  margin-bottom: 50px;
+  font-size: large;
+}
+
+#accordionExample{
+  margin-bottom: 15px;
+}
